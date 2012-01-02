@@ -228,8 +228,8 @@ requires jQuery 1.6+
 			// make sure only the clicked row is selected
 			list.find('li').removeClass('ui-timepicker-selected');
 			$(this).addClass('ui-timepicker-selected');
-
 			_selectValue(self);
+			list.hide();
 		});
 	};
 
