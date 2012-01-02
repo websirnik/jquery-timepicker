@@ -194,7 +194,7 @@ requires jQuery 1.6+
 
 		var zIndex = self.css('zIndex');
 		zIndex = (zIndex+0 == zIndex) ? zIndex+1 : 2;
-		list.css({'display':'none', 'position': 'absolute', "left":(self.position().left), 'zIndex': zIndex });
+		list.css({'display':'none', 'position': 'absolute', "left":(self.position().left+parseInt(self.css('margin-left')), 'zIndex': zIndex });
 
 		if (settings.minTime !== null && settings.showDuration) {
 			list.addClass('ui-timepicker-with-duration');
